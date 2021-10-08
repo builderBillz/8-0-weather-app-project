@@ -50,6 +50,25 @@ document.querySelector(".display form").addEventListener("submit", (event) => {
         todayMinSpan.textContent = "Minimum Temperature: "
         todayMin.textContent = todayMinValue
 
+        const tomorrowH3 = document.querySelector('#tomorrow h3')
+        const tomorrowAvgSpan = document.querySelector("#tomorrow .avgP .bold ")
+        const tomorrowAvg = document.querySelector("#tomorrow .avg")
+        const tomorrowAvgValue = forecast.weather[1].avgtempF + "°F"
+        const tomorrowMaxSpan = document.querySelector("#tomorrow .maxP .bold")
+        const tomorrowMax = document.querySelector("#tomorrow .max") 
+        const tomorrowMaxValue = forecast.weather[1].maxtempF + "°F"
+        const tomorrowMinSpan = document.querySelector("#tomorrow .minP .bold")
+        const tomorrowMin = document.querySelector("#tomorrow .min")
+        const tomorrowMinValue = forecast.weather[1].mintempF + "°F" 
+      
+        tomorrowH3.textContent = "Tomorrow"
+        tomorrowAvgSpan.textContent = "Average Temperature: "
+        tomorrowAvg.textContent = tomorrowAvgValue
+        tomorrowMaxSpan.textContent = "Max Temperature: "
+        tomorrowMax.textContent = tomorrowMaxValue
+        tomorrowMinSpan.textContent = "Minimum Temperature: "
+        tomorrowMin.textContent = tomorrowMinValue
+
       })
       .catch((error) => {
         console.log(error);
