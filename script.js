@@ -69,6 +69,27 @@ document.querySelector(".display form").addEventListener("submit", (event) => {
         tomorrowMinSpan.textContent = "Minimum Temperature: "
         tomorrowMin.textContent = tomorrowMinValue
 
+        const dayAfterTomorrowH3 = document.querySelector('#day-after-tomorrow h3')
+        const dayAfterTomorrowAvgSpan = document.querySelector("#day-after-tomorrow .avgP .bold ")
+        const dayAfterTomorrowAvg = document.querySelector("#day-after-tomorrow .avg")
+        const dayAfterTomorrowAvgValue = forecast.weather[2].avgtempF + "°F"
+        const dayAfterTomorrowMaxSpan = document.querySelector("#day-after-tomorrow .maxP .bold")
+        const dayAfterTomorrowMax = document.querySelector("#day-after-tomorrow .max") 
+        const dayAfterTomorrowMaxValue = forecast.weather[2].maxtempF + "°F"
+        const dayAfterTomorrowMinSpan = document.querySelector("#day-after-tomorrow .minP .bold")
+        const dayAfterTomorrowMin = document.querySelector("#day-after-tomorrow .min")
+        const dayAfterTomorrowMinValue = forecast.weather[2].mintempF + "°F" 
+
+        dayAfterTomorrowH3.textContent = "Day After Tomorrow"
+        dayAfterTomorrowAvgSpan.textContent = "Average Temperature: "
+        dayAfterTomorrowAvg.textContent = dayAfterTomorrowAvgValue
+        dayAfterTomorrowMaxSpan.textContent = "Max Temperature: "
+        dayAfterTomorrowMax.textContent = dayAfterTomorrowMaxValue
+        dayAfterTomorrowMinSpan.textContent = "Minimum Temperature: "
+        dayAfterTomorrowMin.textContent = dayAfterTomorrowMinValue
+
+        
+
       })
       .catch((error) => {
         console.log(error);
