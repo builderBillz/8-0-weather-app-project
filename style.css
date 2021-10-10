@@ -1,9 +1,29 @@
 .display form {
     text-align: center;
-    background: green;
-    border-radius: 5px;
-    padding: 25px;
+    background-color: cornflowerblue;
+    border-radius: 7px;
+    padding: 15px;
     height: 50%;
+    margin: 14px 280px;
+  }
+
+  div {
+    margin: 0px 280px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 3fr 2fr ;
+      
+  }
+
+  #location {
+    text-align: center;
+    background-color: darkgrey;
+    border-radius: 7px;
+    padding: 7px;
+    height: auto ;
+    grid-column: span 3
+    ;
+    /* vertical-align: middle; */
   }
   
   .bold {

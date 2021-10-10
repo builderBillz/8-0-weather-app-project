@@ -12,17 +12,21 @@
     <main class="display">
       <form>
         <h1>Weather App</h1>
-        <label for="search-text">Choose a location</label>
-        <input type="text" id="search-text" name="search" />
+        <label for="search-text">Pick a location</label>
+        <input type="text" id="search" name="search" />
         <input type="submit" value="Get Weather" />
       </form>
-      <section>
+      <div>
+      <section id= "location">
         <h2></h2>
-        <p id="areaP"><span class="bold"></span><span id="area"></span></p>
+        <p id="areaP"><span class="bold"></span><span id="area">Choose a location to view the weather.</span></p>
         <p id="regionP"><span class="bold"></span><span id="region"></span></p>
         <p id="countryP"><span class="bold"></span><span id="country"></span></p>
         <p id="currentlyP"><span class="bold"></span><span id="currently"></span></p>
       </section>
+      <aside class="history">
+        <p>Previous Searches</p>
+      </aside>
       <section id= "today">
         <h3></h3>
         <p class="avgP"><span class="bold"></span><span class="avg"></span></p>
@@ -41,9 +45,7 @@
         <p class="maxP"><span class="bold"></span><span class="max"></span></p>
         <p class="minP"><span class="bold"></span><span class="min"></span></p>
       </section>
-      <aside class="history">
-        <p>Previous Searches</p>
-      </aside>
+    </div>
     </main>
   </body>
 </html>
