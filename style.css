@@ -25,7 +25,15 @@
     ;
     /* vertical-align: middle; */
   }
+
+  ul{
+    list-style: inside;
+  }
   
   .bold {
     font-weight: bold;
+  }
+
+  .previousSearch{
+    list-style: circle;
   }
