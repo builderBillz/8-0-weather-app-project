@@ -1,7 +1,14 @@
+body{
+  background-color: gainsboro;
+}
+
 .display form {
     text-align: center;
     background-color: cornflowerblue;
-    border-radius: 7px;
+    border-radius: 14px;
+    border-color: darkgray;
+    border-style: groove;
+    border-width:thick;
     padding: 15px;
     height: 50%;
     margin: 14px 280px;
@@ -18,22 +25,26 @@
   #location {
     text-align: center;
     background-color: darkgrey;
-    border-radius: 7px;
+    border-radius: 21px;
+    border-color: cornflowerblue;
+    border-style: groove;
+    border-width:thick;
     padding: 7px;
     height: auto ;
-    grid-column: span 3
+    grid-column: span 3;
+    margin-right: 21px 
     ;
     /* vertical-align: middle; */
   }
 
   ul{
-    list-style: inside;
+    list-style: outside;
   }
   
   .bold {
     font-weight: bold;
   }
 
-  .previousSearch{
+  .nextiousSearch{
     list-style: circle;
   }

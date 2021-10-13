@@ -9,6 +9,11 @@ document.querySelector(".display form").addEventListener("submit", (event) => {
   .then((forecast) => {
     console.log(city)
 
+    const label = document.querySelector("label")
+      label.textContent = "Pick a location"
+
+    
+
 
     if (!city.length) {
       throw new Error(`Please enter a city`);
@@ -240,6 +245,8 @@ document.querySelector(".display form").addEventListener("submit", (event) => {
   })
     .catch((error) => {
       console.log(error);
+       const label = document.querySelector("label")
+      label.textContent = "Please Enter A location"
       
     });
 
