@@ -110,7 +110,7 @@ document.querySelector(".display form").addEventListener("submit", (event) => {
     // console.log()
     if(prevSearch.textContent === "No previous searches."){
       const prevSearchLink= document.createElement("a")
-      const prevSearchLinkValue = document.createTextNode(areaValue)
+      const prevSearchLinkValue = document.createTextNode(upperCity)
       prevSearchLink.append(prevSearchLinkValue) 
       prevSearchLink.href = ""
       prevSearchLink.title = city
