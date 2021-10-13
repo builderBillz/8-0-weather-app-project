@@ -154,7 +154,7 @@ document.querySelector(".display form").addEventListener("submit", (event) => {
           .then((response) => response.json())
           .then((forecast) => {
     
-          // console.log(forecast)
+          const upperCity= capitalizeFirstLetter(city)
             
           const h2 = document.querySelector("h2");
           const areaSpan = document.querySelector("#areaP .bold");
